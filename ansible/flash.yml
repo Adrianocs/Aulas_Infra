@@ -1,0 +1,104 @@
+---
+- name: PlayBook Desafio
+  hosts: all
+  tasks:
+
+#--------------------CORRECAO-------------------------
+    - name: Parar NGINX - Correcao
+      service:
+        name: nginx
+        state: stopped
+      ignore_errors: True #ignora o erro se estiver desativo o processo
+
+    - name: Removendo NGINX - UBUNTU - CORRECAO
+      apt:
+        name: nginx*
+        state: absent
+      when: ansible_distribution == "Ubuntu"
+
+    - name: Remover NGINX - CENTOS - CORRECAO
+      yum:
+        name: nginx* #remove todos os pacotes
+        state: absent
+        update_cache: yes
+      when: ansible_distribution == "CentOS"
+
+    - name: Instalando Pacotes - Ubuntu - CORRECAO
+      apt:
+        name: ['apache2','libapache2-mod-php7.0','php7.0']
+        state: present
+        update_cache: yes
+      when: ansible_distribution == "Ubuntu"
+
+    - name: Instalando Pacotes - CentOS - CORRECAO
+      yum:
+        name: ['httpd','php']
+        state: present
+        update_cache: yes
+      notify: httpd
+      when: ansible_distribution == "CentOS"
+
+    - name: Ativar Modulo - UBUNTU - Correcao
+      command: a2enmod php7.0
+      notify: apache
+      when: ansible_distribution == "Ubuntu"
+
+    - name: Copiando Arquivo Index.PHP - CORRECAO
+      copy:
+        src: /etc/ansible/index.php
+        dest: /var/www/html/index.php
+
+  handlers:
+    - name: httpd #falha no start, ocorreu devido ao notify nao foi convocado 
+      service:
+        name: httpd
+        state: restarted
+
+    - name: apache
+      service:
+        name: apache2
+        state: restarted
+
+#-------------------------MEU----------------------
+#
+#    - name: Remover NGINX - UBUNTU - EU
+#      apt: name=nginx state=absent update_cache=yes
+#      when: ansible_distribution == "Ubuntu"
+#
+#    - name: Remover NGINX - CENTOS - EU
+#      yum:
+#        name: nginx
+#        state: absent
+#        update_cache: yes
+#      when: ansible_distribution == "CentOS"
+#
+#
+#    - name: Instalando Pacotes - Ubuntu
+#      apt:
+#        name: ['apache2','libapache2-mod-php7.0','php7.0']
+#        state: present
+#        update_cache: yes
+#      when: ansible_distribution == "Ubuntu"
+#
+#    - name: Instalando Pacotes - CentOS
+#      yum:
+#        name: ['httpd','php']
+#        state: present
+#        update_cache: yes
+#      notify: restart
+#      when: ansible_distribution == "CentOS"
+#
+#    - name: Criando o Arquivo
+#      lineinfile:
+#        path: /var/www/html/index.php
+#        create: yes
+#        line: "{{ item }}"
+#        state: present
+#      with_items:
+#      - "<?php echo \"Desafio de Gothan\" ?>"
+#
+#  handlers:
+#    - name: restart
+#      service:
+#        name: httpd
+#        state: restarted

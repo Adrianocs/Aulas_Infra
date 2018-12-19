@@ -1,0 +1,17 @@
+---
+# tasks file for puppet
+- name: Roles de Instalacao Puppet
+  hosts: all
+  tasks:
+    - include: prereq.yml
+    - include: ins_debian.yml
+      when: ansible_distribution == "Ubuntu"
+    - include: ins_centos.yml
+      when: ansible_distribution == "CentOS"
+
+#- name: Role
+#  hosts: all
+#  tasks:
+#    - include: prereq.yml
+#    - include: ins_centos.yml
+#    - include: ins_debian.yml

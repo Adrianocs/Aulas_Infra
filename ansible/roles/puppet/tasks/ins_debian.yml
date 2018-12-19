@@ -1,0 +1,20 @@
+- name: Instalando Repo - UBUNTU
+  apt:
+    deb: /tmp/puppet6-release-xenial.deb
+    state: present
+
+- name: Iniciar o Puppet
+  apt:
+    name: puppet-agent
+    state: present
+    update_cache: yes
+
+#- name: Instalando o Puppet
+#  command: dpkg -i /tmp/puppet6-release-xenial.deb
+#  when: ansible_os_family == "Debian"
+#
+#- name: Iniciar o Puppet
+#  service:
+#    name: puppet-agent
+#    state: restarted
+#  when: ansible_os_family == "Debian"

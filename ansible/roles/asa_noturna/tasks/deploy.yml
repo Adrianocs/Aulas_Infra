@@ -1,0 +1,9 @@
+- name: Pagina WEB
+  template:
+    src: ../templates/index.html
+    dest: /var/www/html/index.html
+
+- name: Adicionar um Imagem
+  get_url:
+    url: http://montink.camisadimona.com.br/image/cache/data/camisas/marvin-guia-dos-mochileiros-da-galaxias-59f7934b1bc07-estampa-307-680x969.jpg
+    dest: /var/www/html/imagem.jpg

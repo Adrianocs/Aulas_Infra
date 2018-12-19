@@ -1,0 +1,12 @@
+- name: Parar o Apache  - Debian
+  service:
+    name: apache2
+    state: stopped
+  ignore_errors: True
+  when: ansible_os_family == "Debian" #para qualquer OS da Familia Debian
+
+- name: Removendo Apache - Like Debian
+  apt:
+    name: apache2*
+    state: absent
+  when: ansible_os_family == "Debian" #para qualquer OS da Familia Debian

@@ -1,0 +1,19 @@
+- name: Instalando o Puppet - Centos #Correcao
+  yum: 
+    name: /tmp/puppet6-release-el-7.noarch.rpm
+    state: present
+
+- name: Iniciar o Puppet
+  yum:
+    name: puppet-agent
+    state: present
+
+#- name: Instalando o Puppet
+#  command: rpm -Uvh /tmp/puppet6-release-el-7.noarch.rpm
+#  when: ansible_os_family == "RedHat"
+#
+#- name: Iniciar o Puppet
+#  service:
+#    name: puppet-agent
+#    state: present
+#  when: ansible_os_family == "RedHat"

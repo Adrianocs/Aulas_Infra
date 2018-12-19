@@ -1,0 +1,9 @@
+- name: Instalando o NGINX
+  package: #instala em ambas distribuicoes 
+    name: nginx
+    state: present
+
+- name: Iniciar o NGINX
+  service:
+    name: nginx
+    state: restarted

@@ -1,0 +1,19 @@
+---
+- name: Instalando GitLab
+  hosts: devops
+  tasks:
+    - name: Instalando Pacotes necessarios
+      apt:
+        name: ['curl','openssh-server','ca-certificates']
+        state: present
+        update-cache: yes
+
+    - name: Executando SCRIPT - GITLAB
+      shell: curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash
+      register: comando #todo o result do shell acima será armazenado aqui
+
+    - name: Instalando Pacote - GITLAB
+      apt:
+        name: gitlab-ce
+        state: present
+      when: comando.rc == 0 #só será executado se o valor for igual a zero
