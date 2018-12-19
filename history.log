@@ -856,3 +856,941 @@
   856  git commit -m "Todos as aulas devops ansible puppet"
   857  history 
   858  history > history.log
+Ultimos Comandos
+    1  apt install ansible -y
+    2  apt update
+    3  yum install ansible python-pip -y
+    4  apt install ansible python-pip -y
+    5  cd /etc/ansible/
+    6  ls
+    7  ansible --version]
+    8  ansible --version
+    9  vim hosts 
+   10  echo > hosts 
+   11  vim hosts
+   12  pip install ansible
+   13  pip install ansible --upgrade
+   14  pip install pip --upgrade
+   15  exit
+   16  ansible 'localhost,' -e 'ansible_connection=local' -m ping
+   17  ansible all -m ping
+   18  ssh 192.168.99.10
+   19  vi ansible.cfg 
+   20  ansible all -m ping
+   21  ansible -i hosts automation -m ping
+   22  ansible -i hosts docker -m ping
+   23  ansible all -m ping
+   24  ansible all -m command -a 'free -h'
+   25  ansible all -m command -a 'uname -a'
+   26  ansible all -m command -a 'date'
+   27  vim batman.yml
+   28  vim batman.ym
+   29  vim batman.yml 
+   30  ansible-playbook batman.yml 
+   31  sl
+   32  dpkg -l
+   33  dpkg -l | grep sl
+   34  dpkg -l sl
+   35  ansible --version
+   36  cd /etc/ansible/
+   37  ls
+   38  cat ansible.cfg 
+   39  vim ansible.cfg 
+   40  vim hosts 
+   41  cat hosts 
+   42  script /tmp/ansible.class
+   43  cd /etc/ansible/
+   44  vi batman.yml 
+   45  ansible-playbook batman.yml 
+   46  vi batman.yml 
+   47  ansible-playbook batman.yml 
+   48  > robin
+   49  ansible-playbook batman.yml 
+   50  vi batman.yml 
+   51  vim batman.yml 
+   52  cat batman.yml 
+   53  ansible-playbook batman.yml 
+   54  script --help
+   55  exit
+   56  cowsay "hello world"
+   57  cowsay -a tux "hello world"
+   58  cowsay tux "hello world"
+   59  cat /etc/profile | grep PATH
+   60  exit
+   61  cowsay "Hello World"
+   62  cowsay --help
+   63  cowsay -f tux "Hello"
+   64  exit
+   65  ss -lntp
+   66  su - root
+   67  ansible-playbook batman.yml 
+   68  vim ansible.cfg 
+   69  ansible-playbook batman.yml 
+   70  aptitude moo
+   71  su - vagrant
+   72  vi batman.yml 
+   73  cat batman.retry 
+   74  vi batman.yml 
+   75  cat batman.yml 
+   76  vi batman.yml 
+   77  ansible-playbook -e 'username=devops' batman.yml 
+   78  vi batman.yml 
+   79  getent passwd devops
+   80  cat /etc/hosts
+   81  ping -c docker
+   82  ping -c 2 docker
+   83  ping -c 2 automation
+   84  vi hulk.yml
+   85  cat batman.
+   86  cat batman.yml 
+   87  cat batman.yml | more
+   88  vi hulk.yml
+   89  ansible-playbook hulk.yml 
+   90  ]exit
+   91  exit
+   92  cat /tmp/ansible.class 
+   93  man script
+   94  script -a /tmp/ansible.class
+   95  cat /tmp/ansible.class | more
+   96  script -a /tmp/ansible.class
+   97  cd /etc/ansible/
+   98  ansible-playbook batman.yml 
+   99  su - root
+  100  ls
+  101  ss slnt
+  102  ss -lntp
+  103  script -a /tmp/ansible.class
+  104  cat /tmp/ansible.class 
+  105  ss -lntp
+  106  dpkg -l nginx
+  107  dpkg -l apache
+  108  dpkg -l apache2
+  109  cd /etc/ansible/
+  110  ls
+  111  cat batman.yml | more
+  112  cd /etc/ansible/
+  113  cat batman.yml | more 
+  114  ls
+  115  cd /etc/ansible/
+  116  ls
+  117  cd roles/
+  118  ls
+  119  cd ..
+  120  vi flash.yml 
+  121  cat flash.yml 
+  122  cat flash.yml | more
+  123  ls
+  124  grep *os_ *
+  125  grep os_ *
+  126  cd ..
+  127  grep os_ *
+  128  cd ansible/
+  129  grep os_ *
+  130  ls
+  131  cd roles/
+  132  grep os_ *
+  133  ls
+  134  cd asa_noturna/
+  135  grep os_ *
+  136  cd tasks/
+  137  grep os_ *
+  138  cat install_nginx.yml | more
+  139  cat main.yml | more
+  140  cd ..
+  141  grep comman *
+  142  vi flash.yml 
+  143  cd roles/
+  144  ls
+  145  cd asa_noturna/
+  146  ls
+  147  cd tasks/
+  148  ls
+  149  vi main.yml 
+  150  cd
+  151  dpkg -l *puppet*
+  152  service puppet status
+  153  cd /tmp/
+  154  ls
+  155  dpkg -l *puppet*
+  156  ls
+  157  cd
+  158  cd /etc/ansible/
+  159  ls
+  160  mv hulk.yml flash.yml
+  161  ls
+  162  dpkg -l nginx
+  163  dpkg -l libapache2
+  164  dpkg -l libapache2-mod-php7.0
+  165  vi flash.yml 
+  166  ansible-playbook flash.yml 
+  167  vi flash.yml 
+  168  ansible-playbook flash.yml 
+  169  vi flash.yml 
+  170  ls
+  171  vi index.php
+  172  cat index.php 
+  173  ansible-playbook flash.yml 
+  174  vi flash.yml 
+  175  ls
+  176  rm ]
+  177  ls
+  178  ansible-playbook flash.yml 
+  179  vi flash.yml 
+  180  ansible-playbook flash.yml 
+  181  vi flash.yml 
+  182  ansible-playbook flash.yml 
+  183  vi flash.yml 
+  184  cat index.php 
+  185  mkdir roles
+  186  vi ansible.cfg 
+  187  ls
+  188  cd roles/
+  189  ls
+  190  ansible-galaxy init asa_noturna
+  191  ls
+  192  ls asa_noturna/
+  193  ls -lhr
+  194  ls -R
+  195  cat asa_noturna/vars/main.yml 
+  196  cd asa_noturna/tasks/
+  197  ls
+  198  vim main.yml 
+  199  cat /etc/bash.bashrc 
+  200  vim main.yml 
+  201  vim prerequisitos.yml
+  202  mv pre{requisitos,reqDebian}.yml 
+  203  ls
+  204  vim prereqRedhat.yml
+  205  vim install_nginx.yml
+  206  cat main.yml 
+  207  vi main.yml 
+  208  vim deploy.yml
+  209  cd ../templates/
+  210  vim index.html
+  211  vi ../tasks/deploy.yml 
+  212  vim index.html
+  213  cat index.html 
+  214  cd ../tasks/
+  215  ls
+  216  vim main.yml 
+  217  ls
+  218  cat main.yml 
+  219  ansible-playbook main.yml 
+  220  cat main.yml 
+  221  cat install_nginx.yml 
+  222  cat deploy.yml 
+  223  vi deploy.yml 
+  224  ansible-playbook main.yml 
+  225  ls
+  226  ansible-playbook main.yml 
+  227  vi deploy.yml 
+  228  ansible-playbook main.yml 
+  229  ls
+  230  ls -l
+  231  ls ../templates/
+  232  ls
+  233  cd ..
+  234  ls
+  235  echo "DESAFIO 2"
+  236  ansible-galaxy init puppet
+  237  ls
+  238  cd puppet/
+  239  ls
+  240  cd tasks/
+  241  ls
+  242  cat ../../asa_noturna/tasks/deploy.yml 
+  243  vi prereqRH.yml
+  244  ls
+  245  mv prereq{RH}.yml 
+  246  mv prereq{RH,}.yml 
+  247  ls
+  248  vim ins_centos.yml
+  249  vim ins_debian.yml
+  250  vim ins_centos.yml
+  251  ls
+  252  vi main.yml 
+  253  vim ins_debian.yml
+  254  vim ins_centos.yml
+  255  ansible-playbook main.yml 
+  256  vi main.yml 
+  257  ansible-playbook main.yml 
+  258  vi main.yml 
+  259  ansible-playbook main.yml 
+  260  vi main.yml 
+  261  vim ins_centos.yml
+  262  ansible-playbook main.yml 
+  263  puppet --version
+  264  exit
+  265  cd /etc/ansible/roles/puppet/tasks/
+  266  ls
+  267  ls -l
+  268  vi ins_debian.yml 
+  269  vi ins_centos.yml 
+  270  ansible-inventory main.yml 
+  271  vi main.yml 
+  272  vi ins_centos.yml 
+  273  ansible-playbook main.yml 
+  274  vi ins_debian.yml 
+  275  ansible-playbook main.yml 
+  276  vi main.yml 
+  277  ansible-playbook main.yml 
+  278  vi ins_centos.yml 
+  279  ansible-playbook main.yml 
+  280  vi ins_centos.yml 
+  281  ansible-playbook main.yml 
+  282  cd /tmp/]
+  283  cd /tmp/
+  284  ls
+  285  cd -
+  286  vi ins_centos.yml 
+  287  ansible-playbook main.yml 
+  288  vi ins_debian.yml 
+  289  ansible-playbook main.yml 
+  290  vi ins_debian.yml 
+  291  ansible-playbook main.yml 
+  292  vi main.yml 
+  293  ansible-playbook main.yml 
+  294  vi main.yml 
+  295  ansible-playbook main.yml 
+  296  vi prereq.yml 
+  297  ansible-playbook main.yml 
+  298  su - root
+  299  cd
+  300  echo "PUPPET"
+  301  exit
+  302  echo "PUPPET"
+  303  puppet resource package ccze
+  304  puppet resource package ccze ensure=present
+  305  echo "Instalacao do CCZE REALIZADA - MODO AUTONOMO (LOCAL)"
+  306  tail -f /var/log/syslog | ccze
+  307  echo "color nos Logs"
+  308  puppet resource user root
+  309  echo CRIAR USUARIO
+  310  puppet resource user aquaman
+  311  puppet resource user aquaman ensure=present shell=/bin/bash managehome=true
+  312  puppet resource user aquaman
+  313  puppet resource service nginx
+  314  puppet resource service nginx enable=false
+  315  echo DESATIVADO DA INICIALIZAO
+  316  echo ATIVANDO A INICIALIZACAO
+  317  puppet resource service nginx enable=true
+  318  echo PARANDO SERVICO
+  319  puppet resource service crond
+  320  puppet resource service crond ensure=stopped
+  321  puppet resource service crond ensure=start
+  322  puppet resource service crond ensure=present
+  323  puppet resource service crond ensure=started
+  324  puppet resource service crond ensure=present
+  325  puppet resource service crond ensure=running
+  326  puppet resource service cron ensure=running
+  327  systemctl status cron
+  328  systemctl status crond
+  329  puppet resource package puppetserver
+  330  echo INSTALANDO PACOTE
+  331  puppet resource package puppetserver ensure=present
+  332  facter 
+  333  facter --help
+  334  facter kernel
+  335  facter os
+  336  facter processors
+  337  dmidecode -t processor
+  338  dmidecode -t system
+  339  cat /proc/cpuinfo 
+  340  cd
+  341  pwd
+  342  vim arthur_cury.pp
+  343  puppet apply arthur_cury.pp 
+  344  free -h
+  345  vim arthur_cury.pp
+  346  puppet apply arthur_cury.pp 
+  347  vim arthur_cury.pp
+  348  puppet apply arthur_cury.pp 
+  349  vim arthur_cury.pp
+  350  cat /tmp/memfree 
+  351  puppet apply arthur_cury.pp 
+  352  cat /tmp/memfree 
+  353  echo "" > adriano
+  354  hash adriano 
+  355  md5sum adriano 
+  356  echo "i" > adriano
+  357  md5sum adriano 
+  358  cd /etc/puppetlabs/
+  359  ls
+  360  cd puppet
+  361  ls
+  362  echo "Arquivos Relativo ao client"
+  363  cat puppet.conf 
+  364  cd ../puppetserver/
+  365  echo "Arquivos Relativo ao Servidor"
+  366  ls
+  367  cd conf.d/
+  368  ls
+  369  cat puppetserver.conf 
+  370  cd
+  371  cd -
+  372  cd ..
+  373  ls
+  374  echo "PASTA IMPORTANTE"
+  375  cd code/
+  376  ls
+  377  ls environments/
+  378  ls modules/
+  379  cd modules/
+  380  echo "SEMELHANTE O ROLES DO ANSIBLE"
+  381  puppet resource package pdk ensure => present
+  382  puppet resource package pdk ensure=present
+  383  pdk new module base
+  384  ls
+  385  cd base/
+  386  ls
+  387  puppet resource service puppetserver ensure=running
+  388  ss -lntp
+  389  echo "PORTA 8140 - Comunicacao do puppet"
+  390  free -h
+  391  echo "verificando as chaves"
+  392  puppetserver ca ls
+  393  puppetserver ca list
+  394  cd -
+  395  puppetserver ca list
+  396  cd -
+  397  cd
+  398  puppetserver ca list
+  399  cd -
+  400  puppetserver ca list
+  401  cd ..
+  402  cd /opt/puppetlabs/puppet/cache/
+  403  ls
+  404  ls *
+  405  ls */*
+  406  ls */*/*
+  407  puppet resource service puppetserver ensure=running
+  408  echo "ASSINAR OS CERTIFICADOS"
+  409  puppetserver ca sign --certname docker.salas4linux.com.br 
+  410  puppetserver ca list
+  411  puppetserver ca sign --all
+  412  echo "para revogar algum certificado"
+  413  puppetserver ca list
+  414  puppetserver ca sign
+  415  puppetserver ca sign --list
+  416  puppetserver ca sign --helṕ
+  417  puppetserver ca sign --all
+  418  puppetserver ca --list --all
+  419  puppetserver ca list --all
+  420  puppetserver ca revoke --help
+  421  puppetserver ca 
+  422  puppetserver ca clean --help
+  423  echo "Para remover os certificados #puppetserver ca clean -all"
+  424  cd /etc/puppetlabs/code/modules/
+  425  ls
+  426  ls -l
+  427  cd base/
+  428  ls
+  429  ls -
+  430  ls -l
+  431  cd files/
+  432  vim puppet.conf
+  433  cd ..
+  434  cd manifests/
+  435  ls
+  436  vim init.pp
+  437  cat ../files/puppet.conf 
+  438  vim init.pp
+  439  cd ..
+  440  cd .
+  441  cd ..
+  442  ls
+  443  cd environments/
+  444  ls
+  445  cd ..
+  446  cd modules/base/
+  447  ls
+  448  ls files/
+  449  cat files/puppet.conf 
+  450  cat manifests/init.pp 
+  451  ls]
+  452  ls
+  453  cd ..
+  454  ls
+  455  cd environments/
+  456  ls
+  457  cd production/
+  458  ls
+  459  cat environment.conf 
+  460  cd manifests/
+  461  ls
+  462  echo "onde cria as playbooks"
+  463  vim site.pp
+  464  cd ..
+  465  ls
+  466  cd ..
+  467  ls
+  468  cd ..
+  469  ls
+  470  cd modules/
+  471  ls
+  472  cd base/
+  473  ls
+  474  cd manifests/
+  475  ls
+  476  vi init.pp 
+  477  ss -lntp
+  478  ls
+  479  cat init.pp 
+  480  cd ..
+  481  ls
+  482  cd -
+  483  cat init.pp 
+  484  vim init.pp 
+  485  cd ..
+  486  cd files/
+  487  ls
+  488  cat puppet.conf 
+  489  vim puppet.conf 
+  490  cd ..
+  491  cd manifests/
+  492  ls
+  493  vi init.pp 
+  494  cd ..
+  495  cd files/
+  496  ls
+  497  vi puppet.conf 
+  498  cd ..
+  499  ls
+  500  cd manifests/
+  501  ls
+  502  cd ..
+  503  ls
+  504  cd ..
+  505  ls
+  506  cd environments/
+  507  ls
+  508  cd production/
+  509  ls
+  510  cd manifests/
+  511  ls
+  512  cat site.pp 
+  513  cd ..
+  514  ls
+  515  cd modules/
+  516  ls
+  517  cd base/
+  518  ls
+  519  cd files/
+  520  ls
+  521  cat puppet.conf 
+  522  cd ..
+  523  ls
+  524  cd base/
+  525  ls
+  526  cd manifests/
+  527  çs
+  528  ls
+  529  cat init.pp 
+  530  ls
+  531  vi init.pp 
+  532  tail /var/log/syslog 
+  533  tail -f /var/log/syslog 
+  534  puppet agent -t --server devops.salas4linux.com.br
+  535  tail -f /var/log/syslog 
+  536  ip a l
+  537  tcpdump -i enp0s8 host 192.168.99.30
+  538  ls
+  539  cd ..
+  540  ls
+  541  cd files/
+  542  s
+  543  ls
+  544  vi puppet.conf 
+  545  cd ..
+  546  ls
+  547  pdk new module mera
+  548  echo "criando modulos"
+  549  cd mera/
+  550  ls
+  551  cd files/
+  552  cp ~/.bashrc bashrc_mera
+  553  ls
+  554  vim bashrc_mera 
+  555  ls
+  556  vim bash_logout
+  557  cat bash_logout 
+  558  cd ../manifests/
+  559  vim init.pp
+  560  cd ..
+  561  ls
+  562  cd ..
+  563  ls
+  564  cd environments/production/
+  565  ls
+  566  cd manifests/
+  567  ls
+  568  vim site.pp 
+  569  ls
+  570  cd ../../../modules/mera/files/
+  571  ls
+  572  cd ..
+  573  ls
+  574  cd environments/
+  575  ls
+  576  cd ..
+  577  cd modules/
+  578  ls
+  579  cd mera/
+  580  ls
+  581  cd manifests/
+  582  ls
+  583  vi init.pp 
+  584  tail -f /var/log/syslog 
+  585  tail -n 150 /var/log/syslog  | more
+  586  puppet agent -t --server devops.salas4linux.com.br
+  587  cd
+  588  exit
+  589  cd /etc/puppetlabs/code/modules/mera/files/
+  590  ls
+  591  vi bash_logout 
+  592  su - aqualad
+  593  cd /etc/puppetlabs/code/
+  594  ls
+  595  cd modules/mera/manifests/
+  596  ls
+  597  vi init.pp 
+  598  cd ..
+  599  pdk new module arraia_negra
+  600  cd arraia_negra/
+  601  cd manifests/
+  602  vi init.pp
+  603  ls
+  604  ls -l
+  605  cd ../../../environments/production/manifests/
+  606  vi site.pp 
+  607  cd ..
+  608  cd..
+  609  cd ..
+  610  cd modules/
+  611  ls
+  612  pdk new module docker
+  613  cd docker/manifests/
+  614  ls
+  615  vi init.pp
+  616  cd ../../../environments/production/manifests/
+  617  ls
+  618  vi site.pp 
+  619  clear
+  620  cd -
+  621  ls
+  622  vi init.pp 
+  623  cd /etc/puppetlabs/code/modules/docker/manifests/
+  624  ls
+  625  cd ../files/
+  626  ls
+  627  cd ..
+  628  ls
+  629  cd manifests/
+  630  ls
+  631  cat init.pp 
+  632  vi init.pp 
+  633  systemctl status puppetserver.service 
+  634  systemctl restart puppetserver.service 
+  635  cat init.pp
+  636  vi init.pp 
+  637  vim init.pp 
+  638  ls
+  639  cat init.pp 
+  640  vim init.pp 
+  641  systemctl stop puppetserver.service 
+  642  systemctl start puppetserver.service 
+  643  vim init.pp 
+  644  cd ../../../environments/production/manifests/
+  645  cat site.pp 
+  646  ls
+  647  cd -
+  648  cd ../../arraia_negra/manifests/
+  649  cat init.pp 
+  650  echo "GIT"
+  651  mkdir kenobi
+  652  cd kenobi/
+  653  git init
+  654  cd .git/
+  655  ls
+  656  ls -l
+  657  cat config 
+  658  cat description 
+  659  cat HEAD 
+  660  cd ..
+  661  pwd
+  662  git config user.name "Adriano CS"
+  663  git config user.email "adriano.csoares@gmail.com"
+  664  cat .git/config 
+  665  echo "esta foi a forma local"
+  666  echo "forma global"
+  667  git config -global user.name = "Adriano CS"
+  668  git config --global user.name = "Adriano CS"
+  669  cat ~/.gitconfig 
+  670  git config --global user.name = "Adriano CS"
+  671  cat ~/.gitconfig 
+  672  vim README.md
+  673  git config --global user.name "Adriano CS"
+  674  git config --global user.name == "Adriano CS"
+  675  cat ~/.gitconfig 
+  676  vim Padme.sh
+  677  git config --global user.name --add "Adriano CS"
+  678  cat ~/.gitconfig 
+  679  git config --global user.name --"Adriano CS"
+  680  git config --global user.name "Adriano CS"
+  681  git config --global user.name = "Adriano CS"
+  682  cat ~/.gitconfig 
+  683  git config --global user.email = "Adriano CS"
+  684  cat ~/.gitconfig 
+  685  git status
+  686  git add README.md 
+  687  git status
+  688  git commit -m "Arquivo para explicar o Repositorio"
+  689  git status
+  690  git add Padme.sh 
+  691  git commit -m "Script para verificar a comunicao"
+  692  bash Padme.sh 
+  693  vim Padme.sh
+  694  bash Padme.sh 
+  695  ls
+  696  git status
+  697  git add Padme.sh 
+  698  git commit -m "Script para verificar a comunicao - Correcao do Script"
+  699  git status
+  700  bash Padme.sh 
+  701  vim .git/info/exclude 
+  702  git config --global
+  703  git add .
+  704  git status
+  705  ls
+  706  git log
+  707  git log --graph 
+  708  git log --oneline 
+  709  vi README.md 
+  710  git add README.md 
+  711  git commit -m "Duplicacao de linha"
+  712  git log --oneline 
+  713  git revert e2e1cf6
+  714  cat README.md 
+  715  git log --oneline 
+  716  git revert b358ddc
+  717  git log --oneline 
+  718  cat README.md 
+  719  git revert 1d19648
+  720  cat README.md 
+  721  git log --oneline 
+  722  git remote -v
+  723  git remote add infraAgil https://github.com/Adrianocs/InfraAgil.git
+  724  git remote -v
+  725  git push infraAgil master
+  726  git pull infraAgil master 
+  727  git status
+  728  bash Padme.sh 
+  729  cat Padme.sh 
+  730  git log --oneline 
+  731  git checkout -b dev
+  732  git branch 
+  733  git checkout master 
+  734  git branch 
+  735  git checkout dev
+  736  git branch 
+  737  ls
+  738  vi Padme.sh 
+  739  vim README.md 
+  740  git status 
+  741  git add .
+  742  git commit -m "Alteração BRANCH DEV"
+  743  git status
+  744  cat Padme.sh 
+  745  git checkout master 
+  746  cat Padme.sh 
+  747  git log --graph 
+  748  git push infraAgil dev
+  749  git branch 
+  750  vim Padme.sh 
+  751  git add Padme.sh 
+  752  git commit -m "Espaco"
+  753  git status
+  754  git diff master dev
+  755  git status
+  756  git merge master dev
+  757  git status
+  758  git add Padme.sh 
+  759  git commit -m "Teste"
+  760  git merge master dev
+  761  git status
+  762  git log --oneline 
+  763  git branch 
+  764  cat Padme.sh 
+  765  cat README.md 
+  766  git revert 6c6c957
+  767  git status
+  768  git branch 
+  769  git log --oneline 
+  770  git branch dev
+  771  git checkout dev
+  772  git log --oneline 
+  773  cd /etc/ansible/roles/
+  774  ls
+  775  echo "INSTALANDO GITLAB"
+  776  cd ..
+  777  vim gitlab.yml
+  778  ls
+  779  cat gitlab.yml 
+  780  vim gitlab.yml
+  781  ansible-playbook gitlab.yml 
+  782  vim gitlab.yml
+  783  ansible-playbook gitlab.yml 
+  784  cd /etc/gitlab/
+  785  ls
+  786  vim gitlab.rb 
+  787  ss -lntp
+  788  service nginx stop
+  789  systemctl disable nginx
+  790  iptables -nL
+  791  systemctl stop nginx puppet.service 
+  792  ss -lntp
+  793  free -h
+  794  cd
+  795  gitlab-ctl reconfigure
+  796  gitlab-ctl status
+  797  ss -lntp
+  798  cat .ssh/authorized_keys 
+  799  mkdir luke
+  800  cd luke/
+  801  git init
+  802  git remote add dark git@192.168.99.10:root/darth-vader.git
+  803  git remote -v
+  804  vim Sith.txt
+  805  git status
+  806  git add Sith.txt 
+  807  git status
+  808  git commit -m "Comentario Negro..."
+  809  git push dark master 
+  810  ls
+  811  cd
+  812  cd /etc/ansible/
+  813  ls
+  814  ls -l
+  815  vim rundeck.yml
+  816  ls
+  817  cd
+  818  ls
+  819  mkdir aulas
+  820  ls
+  821  cat memfree 
+  822  ls
+  823  cp * aulas/
+  824  cp -r kenobi aulas/
+  825  cd aulas/
+  826  cd ..
+  827  mv aulas aulas_devops
+  828  cd aulas_devops/
+  829  git init
+  830  ls
+  831  git status
+  832  git add .
+  833  git status
+  834  git commit -m "Aulas do DEVOPS"
+  835  cd /etc/ansible/
+  836  ls
+  837  vim rundeck.yml
+  838  ansible-playbook rundeck.yml 
+  839  vim rundeck.yml
+  840  ls
+  841  cd ..
+  842  ls
+  843  cd ansible/
+  844  cd ..
+  845  cp -r ansible /root/aulas_devops/
+  846  cp -r puppetlabs /root/aulas_devops/
+  847  cd ansible/
+  848  ls
+  849  vi rundeck.yml 
+  850  ansible-playbook rundeck.yml 
+  851  cd 
+  852  cd aulas_devops/
+  853  ls
+  854  git status
+  855  git add .
+  856  git commit -m "Todos as aulas devops ansible puppet"
+  857  history 
+  858  history > history.log
+  859  vi history.log 
+  860  git status
+  861  git add .
+  862  git commit -m "History"
+  863  git status
+  864  git remote add https://github.com/Adrianocs/InfraAgil
+  865  cd ..
+  866  git remote add aulas_devops  https://github.com/Adrianocs/InfraAgil
+  867  cd aulas_devops/
+  868  ls
+  869  mkdir aulas
+  870  git remote add aulas_devops  https://github.com/Adrianocs/InfraAgil
+  871  git push aulas_devops master
+  872  mkdir aulas
+  873  ls
+  874  mv adriano aulas/
+  875  cp * aulas/
+  876  cp -r ansible aulas/
+  877  cp -r kenobi aulas/
+  878  cp -r puppetlabs aulas/
+  879  cd aulas/
+  880  ls
+  881  git init
+  882  ls
+  883  cd ..
+  884  cd aulas/
+  885  git status
+  886  git add .
+  887  git commit -m "De novo"
+  888  cd ..
+  889  git remote add aulas https://github.com/Adrianocs/InfraAgil
+  890  git push aulas master
+  891  ls
+  892  git status
+  893  git comit -m "teste"
+  894  git add .
+  895  git comit -m "teste"
+  896  git status
+  897  git commit -m "teste"
+  898  git push aulas master
+  899  cd aulas/
+  900  git push aulas master
+  901  cd ..
+  902  ls
+  903  cd aulas/
+  904  ls
+  905  git status 
+  906  cd /etc/ansible/
+  907  ls
+  908  vim rundeck.yml 
+  909  ansible-playbook rundeck.yml 
+  910  vim rundeck.yml 
+  911  ansible-playbook rundeck.yml 
+  912  cd
+  913  mkdir aulas_Infra
+  914  cd aulas_Infra/
+  915  git init
+  916  ls
+  917  cp -r ../aulas_devops/* .
+  918  cp /etc/ansible/* ansible/
+  919  cp -r /etc/ansible/* ansible/
+  920  git status 
+  921  git add .
+  922  git commit -m "com supervisao"
+  923  git status 
+  924  git remote add aulas_Infra https://github.com/Adrianocs/Aulas_Infra.git
+  925  git push aulas_Infra master 
+  926  cd
+  927  cd /etc/
+  928  ls
+  929  dpkg -l | grep rundeck
+  930  cd ansible/
+  931  ansible-playbook rundeck.yml 
+  932  vi rundeck.yml 
+  933  cd
+  934  cd aulas_Infra/
+  935  ls
+  936  echo "Ultimos Comandos" >> history.log 
+  937  history >> history.log 
